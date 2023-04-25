@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page-wrapper {
+  @apply max-w-[95%] md:max-w-[80%] m-auto;
+}
+
+.build-form {
+  @apply flex flex-col gap-2;
+}
+
+.build-form span {
+  @apply flex flex-col md:flex-row gap-2 justify-between max-w-[80%] p-3;
+}
+
+.build-row input,
+.build-row textarea {
+  @apply min-w-[80%] p-2 rounded-[0.25rem];
+}
+
+.outlines {
+  @apply outline outline-[0.12rem] outline-blue-200 focus:outline-blue-600;
+}
+
+.build-form button {
+  @apply bg-blue-600 hover:bg-blue-300 transition-all md:min-w-[80%] md:ml-[20%] p-2.5;
+}
+
+.blog {
+  @apply border border-red-400 p-4 flex flex-col;
+}
+
+.blog button {
+  @apply bg-red-300 mx-2 p-2 rounded-sm;
+}
+
+.blog h1 {
+  @apply text-xl font-semibold;
+}
+
+.blog h2 {
+  @apply flex justify-end font-semibold text-lg;
+}
+
+.blog p {
+  @apply p-4;
+}
+
+.blog span {
+  @apply text-lg font-semibold flex items-center justify-between;
+}
